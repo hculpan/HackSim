@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		289260301EF062DD0078572B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892602F1EF062DD0078572B /* main.swift */; };
+		2892603D1EF062FE0078572B /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892603C1EF062FE0078572B /* test.swift */; };
+		289260441EF063230078572B /* ConfigSim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289260421EF063230078572B /* ConfigSim.swift */; };
+		289260451EF063230078572B /* CpuSim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289260431EF063230078572B /* CpuSim.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,22 @@
 /* Begin PBXFileReference section */
 		2892602C1EF062DD0078572B /* hacksim */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hacksim; sourceTree = BUILT_PRODUCTS_DIR; };
 		2892602F1EF062DD0078572B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2892603A1EF062FE0078572B /* test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2892603C1EF062FE0078572B /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		2892603E1EF062FE0078572B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		289260421EF063230078572B /* ConfigSim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigSim.swift; path = ../../HackSim.old/HackSim/ConfigSim.swift; sourceTree = "<group>"; };
+		289260431EF063230078572B /* CpuSim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CpuSim.swift; path = ../../HackSim.old/HackSim/CpuSim.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		289260291EF062DD0078572B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		289260371EF062FE0078572B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				2892602E1EF062DD0078572B /* hacksim */,
+				2892603B1EF062FE0078572B /* test */,
 				2892602D1EF062DD0078572B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				2892602C1EF062DD0078572B /* hacksim */,
+				2892603A1EF062FE0078572B /* test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +74,20 @@
 		2892602E1EF062DD0078572B /* hacksim */ = {
 			isa = PBXGroup;
 			children = (
+				289260421EF063230078572B /* ConfigSim.swift */,
+				289260431EF063230078572B /* CpuSim.swift */,
 				2892602F1EF062DD0078572B /* main.swift */,
 			);
 			path = hacksim;
+			sourceTree = "<group>";
+		};
+		2892603B1EF062FE0078572B /* test */ = {
+			isa = PBXGroup;
+			children = (
+				2892603C1EF062FE0078572B /* test.swift */,
+				2892603E1EF062FE0078572B /* Info.plist */,
+			);
+			path = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +110,23 @@
 			productReference = 2892602C1EF062DD0078572B /* hacksim */;
 			productType = "com.apple.product-type.tool";
 		};
+		289260391EF062FE0078572B /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2892603F1EF062FE0078572B /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				289260361EF062FE0078572B /* Sources */,
+				289260371EF062FE0078572B /* Frameworks */,
+				289260381EF062FE0078572B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test;
+			productName = test;
+			productReference = 2892603A1EF062FE0078572B /* test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +138,11 @@
 				ORGANIZATIONNAME = "Harry Culpan";
 				TargetAttributes = {
 					2892602B1EF062DD0078572B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MJU8RT9X3R;
+						ProvisioningStyle = Automatic;
+					};
+					289260391EF062FE0078572B = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = MJU8RT9X3R;
 						ProvisioningStyle = Automatic;
@@ -112,16 +162,37 @@
 			projectRoot = "";
 			targets = (
 				2892602B1EF062DD0078572B /* hacksim */,
+				289260391EF062FE0078572B /* test */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		289260381EF062FE0078572B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		289260281EF062DD0078572B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				289260451EF063230078572B /* CpuSim.swift in Sources */,
 				289260301EF062DD0078572B /* main.swift in Sources */,
+				289260441EF063230078572B /* ConfigSim.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		289260361EF062FE0078572B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2892603D1EF062FE0078572B /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +307,34 @@
 			};
 			name = Release;
 		};
+		289260401EF062FE0078572B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MJU8RT9X3R;
+				INFOPLIST_FILE = test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.culpan.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		289260411EF062FE0078572B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MJU8RT9X3R;
+				INFOPLIST_FILE = test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.culpan.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -253,6 +352,14 @@
 			buildConfigurations = (
 				289260341EF062DD0078572B /* Debug */,
 				289260351EF062DD0078572B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2892603F1EF062FE0078572B /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				289260401EF062FE0078572B /* Debug */,
+				289260411EF062FE0078572B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

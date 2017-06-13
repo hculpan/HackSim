@@ -8,5 +8,44 @@
 
 import Foundation
 
-print("Hello, World!")
+let configSim = ConfigSim()
+
+print("HackSim v.\(configSim.version)")
+
+do {
+    try configSim.processCommandLine()
+    
+    let fileManager = FileManager.default
+    fileManager.changeCurrentDirectoryPath("/Users/harryculpan/src/HackSim")
+    
+    if fileManager.fileExists(atPath: configSim.inputFile!) {
+        let cpuSim = CpuSim()
+        print("Loading ROM file \(configSim.inputFile!)")
+        do {
+            let contents = try String(contentsOfFile: configSim.inputFile!)
+            let lines = contents.components(separatedBy: "\n")
+            var cnt = 0
+            for line in lines {
+                if !line.isEmpty {
+                    cpuSim.setRomValue(address: UInt16(cnt), value: UInt16(line, radix: 2)!)
+                    cnt += 1
+                }
+            }
+            print("ROM loaded")
+            try cpuSim.execute()
+        } catch (CpuError.cpuInvalidInstruction) {
+            print("Cpu halt: Invalid instruction!")
+        } catch {
+            throw ConfigError.hackFileFailedLoad
+        }
+    } else {
+        throw ConfigError.hackFileNotFound
+    }
+} catch (ConfigError.hackFileFailedLoad) {
+    print("Must specify hack program files")
+} catch (ConfigError.tooFewArguments) {
+    print("Must specify hack program files")
+} catch (ConfigError.hackFileNotFound) {
+    print("Specified hack file not found")
+}
 

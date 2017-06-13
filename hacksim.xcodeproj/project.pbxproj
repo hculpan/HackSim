@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		289260301EF062DD0078572B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892602F1EF062DD0078572B /* main.swift */; };
 		2892603D1EF062FE0078572B /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892603C1EF062FE0078572B /* test.swift */; };
-		289260441EF063230078572B /* ConfigSim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289260421EF063230078572B /* ConfigSim.swift */; };
-		289260451EF063230078572B /* CpuSim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289260431EF063230078572B /* CpuSim.swift */; };
+		28F4E2351EF0AB7700AFB99E /* ConfigSim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4E2331EF0AB7700AFB99E /* ConfigSim.swift */; };
+		28F4E2361EF0AB7700AFB99E /* CpuSim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4E2341EF0AB7700AFB99E /* CpuSim.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,8 +31,8 @@
 		2892603A1EF062FE0078572B /* test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2892603C1EF062FE0078572B /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		2892603E1EF062FE0078572B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		289260421EF063230078572B /* ConfigSim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigSim.swift; path = ../../HackSim.old/HackSim/ConfigSim.swift; sourceTree = "<group>"; };
-		289260431EF063230078572B /* CpuSim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CpuSim.swift; path = ../../HackSim.old/HackSim/CpuSim.swift; sourceTree = "<group>"; };
+		28F4E2331EF0AB7700AFB99E /* ConfigSim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigSim.swift; sourceTree = "<group>"; };
+		28F4E2341EF0AB7700AFB99E /* CpuSim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CpuSim.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +74,8 @@
 		2892602E1EF062DD0078572B /* hacksim */ = {
 			isa = PBXGroup;
 			children = (
-				289260421EF063230078572B /* ConfigSim.swift */,
-				289260431EF063230078572B /* CpuSim.swift */,
+				28F4E2331EF0AB7700AFB99E /* ConfigSim.swift */,
+				28F4E2341EF0AB7700AFB99E /* CpuSim.swift */,
 				2892602F1EF062DD0078572B /* main.swift */,
 			);
 			path = hacksim;
@@ -182,9 +182,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				289260451EF063230078572B /* CpuSim.swift in Sources */,
+				28F4E2351EF0AB7700AFB99E /* ConfigSim.swift in Sources */,
+				28F4E2361EF0AB7700AFB99E /* CpuSim.swift in Sources */,
 				289260301EF062DD0078572B /* main.swift in Sources */,
-				289260441EF063230078572B /* ConfigSim.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +354,7 @@
 				289260351EF062DD0078572B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2892603F1EF062FE0078572B /* Build configuration list for PBXNativeTarget "test" */ = {
 			isa = XCConfigurationList;
@@ -362,6 +363,7 @@
 				289260411EF062FE0078572B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

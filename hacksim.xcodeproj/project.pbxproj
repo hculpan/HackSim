@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,32 @@
 		2892603D1EF062FE0078572B /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892603C1EF062FE0078572B /* test.swift */; };
 		28F4E2351EF0AB7700AFB99E /* ConfigSim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4E2331EF0AB7700AFB99E /* ConfigSim.swift */; };
 		28F4E2361EF0AB7700AFB99E /* CpuSim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4E2341EF0AB7700AFB99E /* CpuSim.swift */; };
+		28F4E23E1EF1EFA700AFB99E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4E23D1EF1EFA700AFB99E /* AppDelegate.swift */; };
+		28F4E2401EF1EFA700AFB99E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4E23F1EF1EFA700AFB99E /* ViewController.swift */; };
+		28F4E2421EF1EFA700AFB99E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F4E2411EF1EFA700AFB99E /* Assets.xcassets */; };
+		28F4E2451EF1EFA700AFB99E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28F4E2431EF1EFA700AFB99E /* Main.storyboard */; };
+		28F4E2501EF1EFA700AFB99E /* MacHackSimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4E24F1EF1EFA700AFB99E /* MacHackSimTests.swift */; };
+		28F4E25B1EF1EFA700AFB99E /* MacHackSimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4E25A1EF1EFA700AFB99E /* MacHackSimUITests.swift */; };
+		28F4E2671EF21C4A00AFB99E /* ScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4E2661EF21C4A00AFB99E /* ScreenView.swift */; };
+		28F4E2691EF21CDA00AFB99E /* CpuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4E2681EF21CDA00AFB99E /* CpuView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28F4E24C1EF1EFA700AFB99E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 289260241EF062DD0078572B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28F4E23A1EF1EFA700AFB99E;
+			remoteInfo = MacHackSim;
+		};
+		28F4E2571EF1EFA700AFB99E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 289260241EF062DD0078572B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28F4E23A1EF1EFA700AFB99E;
+			remoteInfo = MacHackSim;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		2892602A1EF062DD0078572B /* CopyFiles */ = {
@@ -33,6 +58,20 @@
 		2892603E1EF062FE0078572B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28F4E2331EF0AB7700AFB99E /* ConfigSim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigSim.swift; sourceTree = "<group>"; };
 		28F4E2341EF0AB7700AFB99E /* CpuSim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CpuSim.swift; sourceTree = "<group>"; };
+		28F4E23B1EF1EFA700AFB99E /* MacHackSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacHackSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F4E23D1EF1EFA700AFB99E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28F4E23F1EF1EFA700AFB99E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28F4E2411EF1EFA700AFB99E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28F4E2441EF1EFA700AFB99E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28F4E2461EF1EFA700AFB99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28F4E24B1EF1EFA700AFB99E /* MacHackSimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacHackSimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F4E24F1EF1EFA700AFB99E /* MacHackSimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacHackSimTests.swift; sourceTree = "<group>"; };
+		28F4E2511EF1EFA700AFB99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28F4E2561EF1EFA700AFB99E /* MacHackSimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacHackSimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F4E25A1EF1EFA700AFB99E /* MacHackSimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacHackSimUITests.swift; sourceTree = "<group>"; };
+		28F4E25C1EF1EFA700AFB99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28F4E2661EF21C4A00AFB99E /* ScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenView.swift; sourceTree = "<group>"; };
+		28F4E2681EF21CDA00AFB99E /* CpuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CpuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +89,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		28F4E2381EF1EFA700AFB99E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F4E2481EF1EFA700AFB99E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F4E2531EF1EFA700AFB99E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -58,6 +118,9 @@
 			children = (
 				2892602E1EF062DD0078572B /* hacksim */,
 				2892603B1EF062FE0078572B /* test */,
+				28F4E23C1EF1EFA700AFB99E /* MacHackSim */,
+				28F4E24E1EF1EFA700AFB99E /* MacHackSimTests */,
+				28F4E2591EF1EFA700AFB99E /* MacHackSimUITests */,
 				2892602D1EF062DD0078572B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +130,9 @@
 			children = (
 				2892602C1EF062DD0078572B /* hacksim */,
 				2892603A1EF062FE0078572B /* test.xctest */,
+				28F4E23B1EF1EFA700AFB99E /* MacHackSim.app */,
+				28F4E24B1EF1EFA700AFB99E /* MacHackSimTests.xctest */,
+				28F4E2561EF1EFA700AFB99E /* MacHackSimUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +154,38 @@
 				2892603E1EF062FE0078572B /* Info.plist */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		28F4E23C1EF1EFA700AFB99E /* MacHackSim */ = {
+			isa = PBXGroup;
+			children = (
+				28F4E23D1EF1EFA700AFB99E /* AppDelegate.swift */,
+				28F4E23F1EF1EFA700AFB99E /* ViewController.swift */,
+				28F4E2411EF1EFA700AFB99E /* Assets.xcassets */,
+				28F4E2431EF1EFA700AFB99E /* Main.storyboard */,
+				28F4E2461EF1EFA700AFB99E /* Info.plist */,
+				28F4E2661EF21C4A00AFB99E /* ScreenView.swift */,
+				28F4E2681EF21CDA00AFB99E /* CpuView.swift */,
+			);
+			path = MacHackSim;
+			sourceTree = "<group>";
+		};
+		28F4E24E1EF1EFA700AFB99E /* MacHackSimTests */ = {
+			isa = PBXGroup;
+			children = (
+				28F4E24F1EF1EFA700AFB99E /* MacHackSimTests.swift */,
+				28F4E2511EF1EFA700AFB99E /* Info.plist */,
+			);
+			path = MacHackSimTests;
+			sourceTree = "<group>";
+		};
+		28F4E2591EF1EFA700AFB99E /* MacHackSimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28F4E25A1EF1EFA700AFB99E /* MacHackSimUITests.swift */,
+				28F4E25C1EF1EFA700AFB99E /* Info.plist */,
+			);
+			path = MacHackSimUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +225,59 @@
 			productReference = 2892603A1EF062FE0078572B /* test.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		28F4E23A1EF1EFA700AFB99E /* MacHackSim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28F4E25D1EF1EFA700AFB99E /* Build configuration list for PBXNativeTarget "MacHackSim" */;
+			buildPhases = (
+				28F4E2371EF1EFA700AFB99E /* Sources */,
+				28F4E2381EF1EFA700AFB99E /* Frameworks */,
+				28F4E2391EF1EFA700AFB99E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacHackSim;
+			productName = MacHackSim;
+			productReference = 28F4E23B1EF1EFA700AFB99E /* MacHackSim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28F4E24A1EF1EFA700AFB99E /* MacHackSimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28F4E2601EF1EFA700AFB99E /* Build configuration list for PBXNativeTarget "MacHackSimTests" */;
+			buildPhases = (
+				28F4E2471EF1EFA700AFB99E /* Sources */,
+				28F4E2481EF1EFA700AFB99E /* Frameworks */,
+				28F4E2491EF1EFA700AFB99E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28F4E24D1EF1EFA700AFB99E /* PBXTargetDependency */,
+			);
+			name = MacHackSimTests;
+			productName = MacHackSimTests;
+			productReference = 28F4E24B1EF1EFA700AFB99E /* MacHackSimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28F4E2551EF1EFA700AFB99E /* MacHackSimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28F4E2631EF1EFA700AFB99E /* Build configuration list for PBXNativeTarget "MacHackSimUITests" */;
+			buildPhases = (
+				28F4E2521EF1EFA700AFB99E /* Sources */,
+				28F4E2531EF1EFA700AFB99E /* Frameworks */,
+				28F4E2541EF1EFA700AFB99E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28F4E2581EF1EFA700AFB99E /* PBXTargetDependency */,
+			);
+			name = MacHackSimUITests;
+			productName = MacHackSimUITests;
+			productReference = 28F4E2561EF1EFA700AFB99E /* MacHackSimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -147,14 +298,29 @@
 						DevelopmentTeam = MJU8RT9X3R;
 						ProvisioningStyle = Automatic;
 					};
+					28F4E23A1EF1EFA700AFB99E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					28F4E24A1EF1EFA700AFB99E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 28F4E23A1EF1EFA700AFB99E;
+					};
+					28F4E2551EF1EFA700AFB99E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 28F4E23A1EF1EFA700AFB99E;
+					};
 				};
 			};
 			buildConfigurationList = 289260271EF062DD0078572B /* Build configuration list for PBXProject "hacksim" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 289260231EF062DD0078572B;
 			productRefGroup = 2892602D1EF062DD0078572B /* Products */;
@@ -163,12 +329,38 @@
 			targets = (
 				2892602B1EF062DD0078572B /* hacksim */,
 				289260391EF062FE0078572B /* test */,
+				28F4E23A1EF1EFA700AFB99E /* MacHackSim */,
+				28F4E24A1EF1EFA700AFB99E /* MacHackSimTests */,
+				28F4E2551EF1EFA700AFB99E /* MacHackSimUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		289260381EF062FE0078572B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F4E2391EF1EFA700AFB99E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F4E2421EF1EFA700AFB99E /* Assets.xcassets in Resources */,
+				28F4E2451EF1EFA700AFB99E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F4E2491EF1EFA700AFB99E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F4E2541EF1EFA700AFB99E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -196,7 +388,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		28F4E2371EF1EFA700AFB99E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F4E2401EF1EFA700AFB99E /* ViewController.swift in Sources */,
+				28F4E23E1EF1EFA700AFB99E /* AppDelegate.swift in Sources */,
+				28F4E2671EF21C4A00AFB99E /* ScreenView.swift in Sources */,
+				28F4E2691EF21CDA00AFB99E /* CpuView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F4E2471EF1EFA700AFB99E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F4E2501EF1EFA700AFB99E /* MacHackSimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F4E2521EF1EFA700AFB99E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F4E25B1EF1EFA700AFB99E /* MacHackSimUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28F4E24D1EF1EFA700AFB99E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28F4E23A1EF1EFA700AFB99E /* MacHackSim */;
+			targetProxy = 28F4E24C1EF1EFA700AFB99E /* PBXContainerItemProxy */;
+		};
+		28F4E2581EF1EFA700AFB99E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28F4E23A1EF1EFA700AFB99E /* MacHackSim */;
+			targetProxy = 28F4E2571EF1EFA700AFB99E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28F4E2431EF1EFA700AFB99E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28F4E2441EF1EFA700AFB99E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		289260311EF062DD0078572B /* Debug */ = {
@@ -335,6 +578,96 @@
 			};
 			name = Release;
 		};
+		28F4E25E1EF1EFA700AFB99E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacHackSim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.culpan.MacHackSim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		28F4E25F1EF1EFA700AFB99E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacHackSim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.culpan.MacHackSim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		28F4E2611EF1EFA700AFB99E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacHackSimTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.culpan.MacHackSimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacHackSim.app/Contents/MacOS/MacHackSim";
+			};
+			name = Debug;
+		};
+		28F4E2621EF1EFA700AFB99E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacHackSimTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.culpan.MacHackSimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacHackSim.app/Contents/MacOS/MacHackSim";
+			};
+			name = Release;
+		};
+		28F4E2641EF1EFA700AFB99E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacHackSimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.culpan.MacHackSimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MacHackSim;
+			};
+			name = Debug;
+		};
+		28F4E2651EF1EFA700AFB99E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacHackSimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.culpan.MacHackSimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MacHackSim;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -364,6 +697,30 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		28F4E25D1EF1EFA700AFB99E /* Build configuration list for PBXNativeTarget "MacHackSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28F4E25E1EF1EFA700AFB99E /* Debug */,
+				28F4E25F1EF1EFA700AFB99E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		28F4E2601EF1EFA700AFB99E /* Build configuration list for PBXNativeTarget "MacHackSimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28F4E2611EF1EFA700AFB99E /* Debug */,
+				28F4E2621EF1EFA700AFB99E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		28F4E2631EF1EFA700AFB99E /* Build configuration list for PBXNativeTarget "MacHackSimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28F4E2641EF1EFA700AFB99E /* Debug */,
+				28F4E2651EF1EFA700AFB99E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -15,8 +15,10 @@ enum ConfigError: Error {
     case hackFileFailedLoad
 }
 
-class ConfigSim {
-    init() {
+final class ConfigSim {
+    static public let config = ConfigSim()
+    
+    private init() {
         inputFile = nil;
     }
     
@@ -24,11 +26,30 @@ class ConfigSim {
     
     let version = "0.1"
     
+    var debugOutput: Bool = false
+    
+    var currentDirectory: String = "."
+    
     func processCommandLine() throws {
         guard CommandLine.argc > 1 else {
             throw ConfigError.tooFewArguments
         }
         
-        inputFile = CommandLine.arguments[1]
+        for argument in CommandLine.arguments {
+            switch argument {
+            case "--dev":
+                currentDirectory = "/Users/harryculpan/src/hacksim"
+            case "--debug":
+                debugOutput = true
+            default:
+                inputFile = argument
+            }
+        }
+    }
+    
+    func outputUsage() {
+        print("Usage: hacksim [--dev] [--debug] <hack file>")
+        print("  --dev    Use pre-defined dev current directory, otherwise use .")
+        print("  --debug  Enable debug output to console")
     }
 }

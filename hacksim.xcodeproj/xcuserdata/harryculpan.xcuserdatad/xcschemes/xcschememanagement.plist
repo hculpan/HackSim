@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MacHackSim.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>hacksim.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,21 @@
 			<true/>
 		</dict>
 		<key>289260391EF062FE0078572B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>28F4E23A1EF1EFA700AFB99E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>28F4E24A1EF1EFA700AFB99E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>28F4E2551EF1EFA700AFB99E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

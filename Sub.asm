@@ -3,15 +3,11 @@
 // by Nisan and Schocken, MIT Press.
 // File name: projects/06/add/Add.asm
 
-// Computes R0 = 2 + 3  (R0 refers to RAM[0])
+// Computes R0 = 2 - 3  (R0 refers to RAM[0])
 
 @2
 D=A
 @3
-D=D+A
+D=D-A
 @0
 M=D
-
-(INFINITE_LOOP)
-@INFINITE_LOOP
-0;JMP

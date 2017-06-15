@@ -8,7 +8,7 @@
 
 import Foundation
 
-let configSim = ConfigSim()
+let configSim = ConfigSim.config
 
 print("HackSim v.\(configSim.version)")
 
@@ -16,7 +16,7 @@ do {
     try configSim.processCommandLine()
     
     let fileManager = FileManager.default
-    fileManager.changeCurrentDirectoryPath("/Users/harryculpan/src/HackSim")
+    fileManager.changeCurrentDirectoryPath(configSim.currentDirectory)
     
     if fileManager.fileExists(atPath: configSim.inputFile!) {
         let cpuSim = CpuSim()
@@ -42,10 +42,13 @@ do {
         throw ConfigError.hackFileNotFound
     }
 } catch (ConfigError.hackFileFailedLoad) {
-    print("Must specify hack program files")
+    print("Must specify hack program file")
+    configSim.outputUsage()
 } catch (ConfigError.tooFewArguments) {
-    print("Must specify hack program files")
+    print("Must specify hack program file")
+    configSim.outputUsage()
 } catch (ConfigError.hackFileNotFound) {
-    print("Specified hack file not found")
+    print("Specified hack file (\(configSim.inputFile!)) not found")
+    configSim.outputUsage()
 }
 
